@@ -1,0 +1,12 @@
+<!-- <p>All the pizzas!</p> -->
+
+<% for order in @order %>
+<p>Name: <%= order.pretty_name() %></p>
+<p>Order: <%= order.quantity %> X <%= order.topping %></p>
+<p><a href="/pizza-orders/<%= order.id %>" >Show Order</a></p>
+<% end %>
+
+
+
+<!-- #no = so it doesnt render it to the page -->
+<!-- create loop in erb with extra steps to tell display input on screen-->
